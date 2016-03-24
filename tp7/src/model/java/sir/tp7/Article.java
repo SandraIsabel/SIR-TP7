@@ -40,7 +40,7 @@ public class Article {
 		return buyers;
 	}
 	public void setBuyers(Person buyer) {
-		this.buyers.add(buyer);
+		this.buyers.add(buyer );
 	}
 
 	

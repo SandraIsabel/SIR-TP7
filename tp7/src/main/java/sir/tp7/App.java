@@ -82,10 +82,10 @@ public class App
     	System.err.println("************Articles**************");
     	for (Article ar : ds.find(Article.class)) {
 			System.err.println("Article name: "+ar.getName());
-			System.err.println("Buyers:");
+			System.err.println("Buyers: ");
 			for (Person per : ar.getBuyers()) {
 				System.err.println(per.getName());
-			}
+			}   
 		}
     }
 }
