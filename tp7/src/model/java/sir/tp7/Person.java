@@ -35,5 +35,10 @@ public class Person {
 		this.address = address;
 	}
 	
+	public String addressString(){
+		return "Adresse\n"+
+				"City:"+address.getCity()+", Country:"+address.getCountry()+", PC:"+address.getPostCode()
+				+", Street:"+address.getStreet();
+	}
 	
 }

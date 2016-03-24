@@ -1,5 +1,8 @@
 package sir.tp7;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.bson.types.ObjectId;
 
 import com.google.code.morphia.annotations.Entity;
@@ -12,6 +15,9 @@ public class Article {
 	private ObjectId id;
 	private String name;
 	private int starts;
+	private List<Person> buyers = new ArrayList<Person>();
+	
+	
 	public ObjectId getId() {
 		return id;
 	}
@@ -30,5 +36,12 @@ public class Article {
 	public void setStarts(int starts) {
 		this.starts = starts;
 	}
+	public List<Person> getBuyers() {
+		return buyers;
+	}
+	public void setBuyers(Person buyer) {
+		this.buyers.add(buyer);
+	}
 
+	
 }
